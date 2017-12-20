@@ -102,6 +102,11 @@
       fillScreen: true,
       inDuration: 500,
     });
-
+    
+    let colors = ["red","blue","green","indigo","purple","black","orange"];
+    let colorID = parseInt(Math.random()*colors.length);
+    $('#mainNav').removeClass("white").addClass(colors[colorID]);
+    console.log("Sorteada a cor " + colors[colorID] + " com ID = " + colorID);
+    
 	}); // end of document ready
 })(jQuery); // end of jQuery name space
